@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JTTwoWelComeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xir-QP-OxV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择您的吉他弹奏达成目标" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vj-W5-XMG">
+                                <rect key="frame" x="29" y="129" width="317" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Im1-jd-r0k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="即将为您推荐针对性的吉他弹奏课程" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1O-fb-aNE">
+                                <rect key="frame" x="89.5" y="177" width="196.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="tdK-Pd-deS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMc-gc-NTx">
+                                <rect key="frame" x="20" y="51.5" width="32" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hvS-ug-lXP"/>
+                                    <constraint firstAttribute="width" constant="32" id="qCv-cv-pOJ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="huifan"/>
+                                <connections>
+                                    <action selector="gotoOneWelCome:" destination="gTV-IL-0wX" eventType="touchUpInside" id="rZD-Pc-OBq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDy-xj-8c4">
+                                <rect key="frame" x="299" y="59" width="56" height="18"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="lMl-nT-vCU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="下一步">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="D03-uc-fmg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5vj-W5-XMG" firstAttribute="centerX" secondItem="Xir-QP-OxV" secondAttribute="centerX" id="AIr-tu-JlJ"/>
+                            <constraint firstItem="Y1O-fb-aNE" firstAttribute="centerX" secondItem="Xir-QP-OxV" secondAttribute="centerX" id="EyT-VU-ur1"/>
+                            <constraint firstItem="5vj-W5-XMG" firstAttribute="top" secondItem="Xir-QP-OxV" secondAttribute="top" constant="129" id="Eyx-Iy-Q8R"/>
+                            <constraint firstItem="pMc-gc-NTx" firstAttribute="centerY" secondItem="lDy-xj-8c4" secondAttribute="centerY" id="F4C-xI-9Be"/>
+                            <constraint firstItem="Y1O-fb-aNE" firstAttribute="top" secondItem="5vj-W5-XMG" secondAttribute="bottom" constant="24" id="K8A-si-Xem"/>
+                            <constraint firstAttribute="trailing" secondItem="lDy-xj-8c4" secondAttribute="trailing" constant="20" id="bU7-iL-2qS"/>
+                            <constraint firstItem="pMc-gc-NTx" firstAttribute="leading" secondItem="Xir-QP-OxV" secondAttribute="leading" constant="20" id="gt4-ex-dM3"/>
+                            <constraint firstItem="lDy-xj-8c4" firstAttribute="top" secondItem="Xir-QP-OxV" secondAttribute="top" constant="59" id="sPK-iS-ug1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Xir-QP-OxV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ONe-VL-8BP"/>
+                <constraint firstAttribute="bottom" secondItem="Xir-QP-OxV" secondAttribute="bottom" id="Zc0-2z-PRY"/>
+                <constraint firstAttribute="trailing" secondItem="Xir-QP-OxV" secondAttribute="trailing" id="iU3-rf-Bjd"/>
+                <constraint firstItem="Xir-QP-OxV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wpm-3M-2Ms"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="huifan" width="17" height="19"/>
+    </resources>
+</document>

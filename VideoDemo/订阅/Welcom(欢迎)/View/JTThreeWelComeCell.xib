@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JTThreeWelComeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="743"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="743"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20m-j4-1PT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="743"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ni-EE-II1">
+                                <rect key="frame" x="15" y="590" width="345" height="55"/>
+                                <color key="backgroundColor" red="1" green="0.22352941176470587" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="345" id="GCN-Ol-4ge"/>
+                                    <constraint firstAttribute="height" constant="55" id="lNc-Kk-a3C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="27.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dQK-DB-gPb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mD1-Vp-ntk">
+                                <rect key="frame" x="43" y="135" width="289" height="358"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mD1-Vp-ntk" secondAttribute="height" multiplier="345:427" id="gHX-Cp-t7O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4ni-EE-II1" secondAttribute="bottom" constant="98" id="2Sv-66-GzN"/>
+                            <constraint firstItem="mD1-Vp-ntk" firstAttribute="top" secondItem="20m-j4-1PT" secondAttribute="top" constant="135" id="QsZ-Ys-IQt"/>
+                            <constraint firstItem="4ni-EE-II1" firstAttribute="centerX" secondItem="20m-j4-1PT" secondAttribute="centerX" id="S2A-cb-H8v"/>
+                            <constraint firstItem="mD1-Vp-ntk" firstAttribute="centerX" secondItem="20m-j4-1PT" secondAttribute="centerX" id="ida-0h-KJb"/>
+                            <constraint firstItem="4ni-EE-II1" firstAttribute="top" secondItem="mD1-Vp-ntk" secondAttribute="bottom" constant="97" id="nt1-B4-UBv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="20m-j4-1PT" secondAttribute="trailing" id="6Sa-pt-JvI"/>
+                <constraint firstAttribute="bottom" secondItem="20m-j4-1PT" secondAttribute="bottom" id="9sv-I9-2BX"/>
+                <constraint firstItem="20m-j4-1PT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FAm-ka-2Ll"/>
+                <constraint firstItem="20m-j4-1PT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eOS-co-fcm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="375" height="743"/>
+            <connections>
+                <outlet property="beginBtn" destination="4ni-EE-II1" id="hT0-to-T0n"/>
+                <outlet property="contentIV" destination="mD1-Vp-ntk" id="B3t-NX-8ZJ"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="15.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
